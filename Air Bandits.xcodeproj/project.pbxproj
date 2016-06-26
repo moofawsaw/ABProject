@@ -16,6 +16,8 @@
 		78D27A921D1DD9CC00BF383E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D27A901D1DD9CC00BF383E /* LaunchScreen.storyboard */; };
 		78D27A9D1D1DD9CC00BF383E /* Air_BanditsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D27A9C1D1DD9CC00BF383E /* Air_BanditsTests.swift */; };
 		78D27AA81D1DD9CC00BF383E /* Air_BanditsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D27AA71D1DD9CC00BF383E /* Air_BanditsUITests.swift */; };
+		78D27AB61D1DDDBD00BF383E /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D27AB51D1DDDBD00BF383E /* GameKit.framework */; };
+		F95EB9C0B04E4DC216DCC64A /* Pods_Air_Bandits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D514A19EBB5C742C894CB68E /* Pods_Air_Bandits.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,12 @@
 		78D27AA31D1DD9CC00BF383E /* Air BanditsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Air BanditsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D27AA71D1DD9CC00BF383E /* Air_BanditsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Air_BanditsUITests.swift; sourceTree = "<group>"; };
 		78D27AA91D1DD9CC00BF383E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78D27AB51D1DDDBD00BF383E /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		816C9B76FD690E03AE1F4F37 /* Pods-Air Bandits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Air Bandits.release.xcconfig"; path = "Pods/Target Support Files/Pods-Air Bandits/Pods-Air Bandits.release.xcconfig"; sourceTree = "<group>"; };
+		A542098DB08BF92FA36A282C /* Pods-Air Bandits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Air Bandits.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Air Bandits/Pods-Air Bandits.debug.xcconfig"; sourceTree = "<group>"; };
+		A60B353496EBB08E8E75E23D /* Pods_Air_BanditsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Air_BanditsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D514A19EBB5C742C894CB68E /* Pods_Air_Bandits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Air_Bandits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E15F7AB9373CFBB2518A6FB6 /* Pods_Air_BanditsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Air_BanditsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78D27AB61D1DDDBD00BF383E /* GameKit.framework in Frameworks */,
+				F95EB9C0B04E4DC216DCC64A /* Pods_Air_Bandits.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +88,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		729BA7302E13E45C5D36D7AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A542098DB08BF92FA36A282C /* Pods-Air Bandits.debug.xcconfig */,
+				816C9B76FD690E03AE1F4F37 /* Pods-Air Bandits.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		78D27A771D1DD9CC00BF383E = {
 			isa = PBXGroup;
 			children = (
+				78D27AB51D1DDDBD00BF383E /* GameKit.framework */,
 				78D27A821D1DD9CC00BF383E /* Air Bandits */,
 				78D27A9B1D1DD9CC00BF383E /* Air BanditsTests */,
 				78D27AA61D1DD9CC00BF383E /* Air BanditsUITests */,
 				78D27A811D1DD9CC00BF383E /* Products */,
+				729BA7302E13E45C5D36D7AB /* Pods */,
+				9AE6449CCA7B818618AD8794 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +153,16 @@
 			path = "Air BanditsUITests";
 			sourceTree = "<group>";
 		};
+		9AE6449CCA7B818618AD8794 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D514A19EBB5C742C894CB68E /* Pods_Air_Bandits.framework */,
+				A60B353496EBB08E8E75E23D /* Pods_Air_BanditsTests.framework */,
+				E15F7AB9373CFBB2518A6FB6 /* Pods_Air_BanditsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78D27AAC1D1DD9CC00BF383E /* Build configuration list for PBXNativeTarget "Air Bandits" */;
 			buildPhases = (
+				E21793C20B00B6A98D05951B /* [CP] Check Pods Manifest.lock */,
 				78D27A7C1D1DD9CC00BF383E /* Sources */,
 				78D27A7D1D1DD9CC00BF383E /* Frameworks */,
 				78D27A7E1D1DD9CC00BF383E /* Resources */,
+				E18020E6E2355D0F3D7E46B0 /* [CP] Embed Pods Frameworks */,
+				F98100465AB90F944461F873 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78D27AAF1D1DD9CC00BF383E /* Build configuration list for PBXNativeTarget "Air BanditsTests" */;
 			buildPhases = (
+				8E1BC134EF81FDEAF458FFB6 /* [CP] Check Pods Manifest.lock */,
 				78D27A941D1DD9CC00BF383E /* Sources */,
 				78D27A951D1DD9CC00BF383E /* Frameworks */,
 				78D27A961D1DD9CC00BF383E /* Resources */,
+				60458F96A9C1B974EBF65001 /* [CP] Embed Pods Frameworks */,
+				4B80EA814033AB82B59531D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78D27AB21D1DD9CC00BF383E /* Build configuration list for PBXNativeTarget "Air BanditsUITests" */;
 			buildPhases = (
+				EE6170D9B06CF38E60AE94E7 /* [CP] Check Pods Manifest.lock */,
 				78D27A9F1D1DD9CC00BF383E /* Sources */,
 				78D27AA01D1DD9CC00BF383E /* Frameworks */,
 				78D27AA11D1DD9CC00BF383E /* Resources */,
+				5A62F94C077729D0F27ED266 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +239,12 @@
 				TargetAttributes = {
 					78D27A7F1D1DD9CC00BF383E = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = X6CZ58NG2P;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
 					};
 					78D27A971D1DD9CC00BF383E = {
 						CreatedOnToolsVersion = 7.3;
@@ -257,6 +303,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B80EA814033AB82B59531D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Air BanditsTests/Pods-Air BanditsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A62F94C077729D0F27ED266 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Air BanditsUITests/Pods-Air BanditsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60458F96A9C1B974EBF65001 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Air BanditsTests/Pods-Air BanditsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E1BC134EF81FDEAF458FFB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E18020E6E2355D0F3D7E46B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Air Bandits/Pods-Air Bandits-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E21793C20B00B6A98D05951B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EE6170D9B06CF38E60AE94E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F98100465AB90F944461F873 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Air Bandits/Pods-Air Bandits-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		78D27A7C1D1DD9CC00BF383E /* Sources */ = {
@@ -407,23 +576,31 @@
 		};
 		78D27AAD1D1DD9CC00BF383E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A542098DB08BF92FA36A282C /* Pods-Air Bandits.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Air Bandits/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "underhill.Air-Bandits";
+				PRODUCT_BUNDLE_IDENTIFIER = "XC-com-underhill-airbandits";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		78D27AAE1D1DD9CC00BF383E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 816C9B76FD690E03AE1F4F37 /* Pods-Air Bandits.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Air Bandits/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "underhill.Air-Bandits";
+				PRODUCT_BUNDLE_IDENTIFIER = "XC-com-underhill-airbandits";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -494,6 +671,7 @@
 				78D27AAE1D1DD9CC00BF383E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78D27AAF1D1DD9CC00BF383E /* Build configuration list for PBXNativeTarget "Air BanditsTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +680,7 @@
 				78D27AB11D1DD9CC00BF383E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78D27AB21D1DD9CC00BF383E /* Build configuration list for PBXNativeTarget "Air BanditsUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +689,7 @@
 				78D27AB41D1DD9CC00BF383E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
